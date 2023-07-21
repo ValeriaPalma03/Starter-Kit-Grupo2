@@ -22,5 +22,5 @@ Los datos capturados se pueden visualizar en tiempo real a través de una app, q
 ### Participantes
 
 Alejandra Alarcón (alejandraalarcon947@gmail.com)
-Bastian Matteo (bastian.matteo@ug.uchile.cl)
-Valeria Palma (valeria.palma@ug.uchile.cl)
+//Bastian Matteo (bastian.matteo@ug.uchile.cl)
+//Valeria Palma (valeria.palma@ug.uchile.cl)
