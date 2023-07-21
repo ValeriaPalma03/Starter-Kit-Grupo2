@@ -10,4 +10,9 @@ Se plantea el siguiente desafío:
 ## Proyecyo de solución 
 Sistema de monitoreo de maquinaria compuesto de diversos sensores capaces de medir temperatura, movimiento, voltaje, gas, flujo de agua,  etc;  dependiendo de las necesidades del usuario. 
 Los datos capturados se pueden visualizar en tiempo real a través de una app, que cuenta con un sistema de alertas que avisa de inmediato cuando se detecta alguna anomalía, para facilitar la visualización remota al usuario.
-h
+
+### Sensores utilizados
+
+*Sensor de temperatura
+*SEnsor de humedad
+*Sensor de movimiento (PIR)
