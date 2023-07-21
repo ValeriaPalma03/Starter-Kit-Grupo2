@@ -18,3 +18,9 @@ Los datos capturados se pueden visualizar en tiempo real a través de una app, q
 * Sensor de temperatura
 * Sensor de humedad
 * Sensor de movimiento (PIR)
+
+### Participantes
+
+Alejandra Alarcón (alejandraalarcon947@gmail.com)
+Bastian Matteo (bastian.matteo@ug.uchile.cl)
+Valeria Palma (valeria.palma@ug.uchile.cl)
