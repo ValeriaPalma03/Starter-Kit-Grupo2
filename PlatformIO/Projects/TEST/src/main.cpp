@@ -36,6 +36,10 @@ String password = "22222";
 int gCurrentStatus = 0;         // variable for reading the pin current status 
 int gLastStatus = 0;            // variable for reading the pin last status 
 
+//Funciones 
+
+//Funciones de sensor de temperatura y humedad 
+
 void errorDecoder(SHTC3_Status_TypeDef message)                            
 {   
   switch(message)   
@@ -103,6 +107,7 @@ void setup()
   Wire.setClock(400000);                                         
   Serial.println(); 
 
+  //Función de sensor de movimiento 
   sk.UserAPN ( apn , user , pw);   
   delay(500);   
   sk.Connect(apn); 
@@ -113,6 +118,7 @@ void setup()
 
 void loop() 
 {     
+  // Conexión a Starter-Kit
   if (!sk.ConnectionStatus())   
   {     
     sk.Reconnect(apn);   
@@ -123,13 +129,8 @@ void loop()
   } 
   shtc3_get();   
   delay(1000); 
-  //sk.SendMessage(msg);     
-  //using namespace std;   
-  //Temperature =  String(mySHTC3.toDegC());   
-  //Humidity =  String(mySHTC3.toPercent()); 
-  //String msg2 = "{\"Temperatura\" : "+Temperature+" , \"Humedad\" : "+Humidity+" ,  \"Bateria\": "+String(round(analogRead(PIN_VBAT) * REAL_VBAT_MV_PER_LSB)/37)+"  }" ; 
- 
-  //sk.SendMessage(msg2);   
+
+  //Print de lo capturado por sensor de movimiento
   gCurrentStatus = digitalRead(SENSOR_PIN);   
   if(gLastStatus != gCurrentStatus)   
   {     
@@ -152,6 +153,7 @@ void loop()
     } 
 
 
+  //Mandado de mensaje a Thingsboard
   using namespace std;   
   Temperature =  String(mySHTC3.toDegC());   
   Humidity =  String(mySHTC3.toPercent()); 
